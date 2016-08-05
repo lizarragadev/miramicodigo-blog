@@ -1,0 +1,95 @@
+{{!< default}}
+
+{{#author}}
+
+<header id="header" class="header{{#if cover}} has-cover{{else}}{{#if @blog.cover}} has-cover{{/if}}{{/if}}">
+	<div class="inner">
+		<span class="header-title">
+			{{#if image}}
+			<figure class="header-image">
+				<img src="{{image}}" alt="{{name}}" />
+			</figure>
+			{{/if}}
+			<h1 class="header-name-primero">Hola, mi nombre es </h1>
+			<h1 class="header-name">{{name}} <em>{{ ../pagination.total}}</em></h1>
+			<h2 class="header-name-desc">Front-end & Mobile Developer</h2>			
+			{{#if bio}}
+				<span class="header-description">
+				Algo sobre mí, soy Fundador del <a href="http://www.gdg.androidbolivia.com" TARGET="_new">GDG Android Bolivia</a>, también miembro del <a href="http://www.gdglapaz.com" TARGET="_new">GDG La Paz</a>, soy blogger/podcaster en <a href="http://www.miramicodigo.com" TARGET="_new">Mira mi Código</a> y miembro en otras comunidades de tecnología.<br>
+				Mi especialidad es el desarrollo de aplicaciones móviles en la plataforma Android, así mismo desarrollo en plataformas como iOS, NodeJS, AngularJS, Python y otras yerbas.<br>
+				Doy cursos de Android (free|paid), de vez en cuando me invitan a dar conferencias en distintos lugares y me gusta mucho ayudar|enseñar a personas de escasos recursos que tengan ganas de aprender.
+			{{/if}}
+			<div class="wrapper">
+		<div>
+		
+			
+		
+		<a href="">
+			<img border="0" title="Usuario: Gusn8_" src="/src/imgs/skype.png">
+		</a>
+
+		<a href="http://m.me/Gusn8" TARGET="_new">
+			<img border="0" title="Chatea conmigo" src="/src/imgs/facebook-messenger.png">
+		</a>
+
+		<a href="#"">
+			<img border="0" title="Whatsapp: +591 77752810" src="/src/imgs/whatsapp.png">
+		</a>
+
+		<a href="https://twitter.com/Gusn8_" TARGET="_new">
+			<img border="0" title="Twitter" src="/src/imgs/twitter.png">
+		</a>
+		
+		<a href="https://www.facebook.com/Gusn8" TARGET="_new">
+			<img border="0" title="Facebook" src="/src/imgs/fb.png">
+		</a>
+
+		<a href="https://www.instagram.com/gusn8/" TARGET="_new">
+			<img border="0" title="Instagram" src="/src/imgs/instagram.png">
+		</a>
+
+		<a href="https://google.com/+GustavoLizarraga" TARGET="_new">
+			<img border="0" title="Google Plus" src="/src/imgs/google+.png">
+		</a>
+
+		<a href="mailto:lizarraga.gux@gmail.com" target="_top" TARGET="_new">
+			<img border="0" title="Enviar correo" src="/src/imgs/email.png">
+		</a>
+
+		<a href="https://bo.linkedin.com/in/gusn8" TARGET="_new">
+			<img border="0" title="LinkedIn" src="/src/imgs/linkedin.png">
+		</a>
+
+		<a href="https://github.com/Gusn8" TARGET="_new">
+			<img border="0" title="GitHub" src="/src/imgs/github128.png">
+		</a>
+
+		<a href="https://www.youtube.com/channel/UCGTCsuk3QQ7DBjK8u_Uxvww" TARGET="_new">
+			<img border="0" title="Youtube" src="/src/imgs/youtube.png">
+		</a>
+		</div>
+	</div>
+
+		</span>
+	</div>
+	{{#if cover}}
+	<div class="header-cover" style="background-image: url('{{cover}}');"></div>
+	{{else}}
+	{{#if @blog.cover}}
+	<div class="header-cover" style="background-image: url('{{@blog.cover}}');"></div>
+	{{/if}}
+	{{/if}}
+</header>
+
+
+{{/author}}
+
+<div id="post-index" class="container">
+
+	<main class="content" role="main">
+	
+		{{> "loop"}}
+	
+	</main>
+
+</div>
