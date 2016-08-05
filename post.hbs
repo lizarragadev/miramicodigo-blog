@@ -1,60 +1,29 @@
 {{!< default}}
-
-{{#post}}
-
+{{#post}}	
 <main class="content" role="main">
 	<article class="{{post_class}}">
 		<div class="inner">
-
 			<div id="push">
-
-			<header class="post-header">
-				<span class="post-meta">
-					<span class="post-author">Escrito por {{author}}</span> | 
-					<span class="post-date">{{date format="DD MMMM YYYY"}} 
-					<span class="post-reading-time">| 
-					<span class="estimated-reading-time"></span> 
-					</span></span>
-				</span>
-				<div class="clear"></div>
-				<h1 class="post-title">{{{title}}}</h1>
-			</header>
-		
-			<section class="post-content">
-				{{content}}
-			</section>
-			
-			<footer class="post-footer">
-				<div class="post-tags">Tags:  
-					{{tags separator=" "}}
-				</div>
-			</footer>
-			
-			<aside class="post-comments">
-				<div id="disqus_thread"></div>
-<script>
-
-/**
- *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
- *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
-/*
-var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = '//miramicodigo.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-})();
-</script>
-
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                
-
-			</aside>
+				<header class="post-header">
+					<span class="post-meta">
+						<span class="post-author">Escrito por {{author}}</span> | 
+						<span class="post-date">{{date format="DD MMMM YYYY"}}</span> 
+						<span class="post-reading-time">|<span class="estimated-reading-time"></span> 
+					</span>
+					<div class="clear"></div>
+					<h1 class="post-title">{{{title}}}</h1>
+				</header>
+				<section class="post-content">
+					{{content}}
+				</section>
+				<footer class="post-footer">
+					<div class="post-tags">Tags:  
+						{{tags separator=" "}}
+					</div>
+				</footer>
 			</div>
+			<div id="disqus_thread">
+		</div>
 			<nav class="post-nav">
 				{{#next_post}}
 					<a class="post-nav-item post-nav-next" href="{{url absolute="true"}}">
@@ -80,8 +49,22 @@ var disqus_config = function () {
 				{{/prev_post}}
 				<div class="clear"></div>
 			</nav>
-
-			{{/post}}
 		</div>
+		
+		<script>
+			var disqus_config = function () {
+			    this.page.url = '{{url absolute="true"}}';
+			    this.page.identifier = 'ghost-{{id}}';
+			};
+			(function() { 
+			    var d = document, s = d.createElement('script');
+			    s.src = '//miramicodigo.disqus.com/embed.js';
+			    s.setAttribute('data-timestamp', +new Date());
+			    (d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	</article>
 </main>
+{{/post}}
+
