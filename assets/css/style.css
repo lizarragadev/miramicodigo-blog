@@ -447,7 +447,7 @@ body{
 	overflow:hidden
 }
 .menu-active body{
-	background:#1F2026
+	background:#FFF
 }
 .inner{
 	max-width:48em;
@@ -592,6 +592,7 @@ body{
 #nav{
 	position:relative;
 	background:#8BC34A;
+	border-color: #FFF;
 	z-index:70;
 	transition:all ease-out 0.4s;
 	-webkit-transform:translate3d(0, 0, 0);
@@ -1413,13 +1414,13 @@ body{
 	padding:0.286em 0.714em;
 	border-radius:2px;
 	color:#fff;
-	text-shadow:0 0 2px #2DB77E;
-	background:#36D995;
+	text-shadow:0 0 1px #FFF;
+	background:#8BC34A;
 	font-weight:300
 }
 .post-footer .post-tags a:hover,
 .post-footer .post-tags a:focus{
-	background:#2DB77E
+	background:#689F38
 }
 .post-footer .post-share{
 	float:center
