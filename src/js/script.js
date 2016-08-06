@@ -293,3 +293,6 @@ jQuery(function($) {
 		}, 1);
 	});
 });
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57a52ae4b36af3d5"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5797aa510753e842"></script>
