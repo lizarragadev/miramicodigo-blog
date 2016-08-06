@@ -1100,10 +1100,23 @@ body{
 .post .post-title{
 	position:relative;
 	color:#388E3C;
-	font-size:2em;
+	text-align: center;
+	font-size:3em;
 	line-height:1.375em;
 	font-weight:800;
 	text-indent:-1px;
+	margin:1.25em 0 0.75em
+}
+.post .post-shared{
+	border:1;
+	position:center;
+	color:#388E3C;
+	text-align: center;
+	font-size:1.3em;
+	font-weight:500;
+	text-indent:-1px;
+	margin-right: 1em;
+	margin-left: 1em;
 	margin:0.25em 0 0.75em
 }
 .post .post-title:before{
@@ -1114,6 +1127,23 @@ body{
 	width:100%;
 	margin-bottom:-2px;
 	border-bottom:4px solid #BDBDBD
+}
+.shared{
+	border-radius: 10px; 
+	border: 1px solid; 
+	border-color: #eefde8;
+	height: auto; 
+	width: 100%; 
+	margin:10px; 
+	background-color: #eefde8;
+	font-size: 20px; 
+	text-align:center; 
+	padding-top: 20px;
+	padding-bottom: 20px; 
+	word-wrap:break-word;
+	-webkit-box-shadow: 0px 1px 31px 1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 1px 31px 1px rgba(0,0,0,0.5);
+	box-shadow: 0px 1px 31px 1px rgba(0,0,0,0.5);
 }
 .post .post-title a{
 	text-decoration:none;
