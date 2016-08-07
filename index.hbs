@@ -3,9 +3,11 @@
 <header id="header" class="header{{#if @blog.cover}} has-cover{{/if}}">
 	<div class="inner">
 		<a class="header-title" href="{{@blog.url}}">
-<img border="0" title="Chatea conmigo" src="/src/imgs/facebook-messenger.png">			{{#if @blog.description}}
+			<img border="0" title="Mira mi Codigo" src="/src/imgs/facebook-messenger.png">
+			{{#if @blog.description}}
 				<span class="header-description">{{@blog.description}}</span>
 			{{/if}}
+			<div class="g-ytsubscribe" data-channelid="UCGTCsuk3QQ7DBjK8u_Uxvww" data-layout="full" data-count="default" data-onytevent="onYtEvent"></div>
 		</a>
 	</div>
 	{{#if @blog.cover}}
@@ -22,3 +24,16 @@
 	</main>
 
 </div>
+<script src="https://apis.google.com/js/platform.js"></script>
+<script>
+  function onYtEvent(payload) {
+    if (payload.eventType == 'subscribe') {
+      // Add code to handle subscribe event.
+    } else if (payload.eventType == 'unsubscribe') {
+      // Add code to handle unsubscribe event.
+    }
+    if (window.console) { // for debugging only
+      window.console.log('YT event: ', payload);
+    }
+  }
+</script>
