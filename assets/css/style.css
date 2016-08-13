@@ -157,7 +157,7 @@ body{
 	text-shadow:none
 }
 a{
-	color:#388E3C;
+	color:#234C50;
 	text-decoration:none;
 	font-weight:400;
 	transition:all ease-out 0.2s
@@ -649,7 +649,7 @@ body{
 	cursor:pointer
 }
 #nav .nav-menu a:hover,#nav .nav-menu a:focus{
-	background:#689F38
+	background:#2F666B
 }
 #nav .nav-menu a i:before{
 	margin:auto
@@ -1099,7 +1099,7 @@ body{
 }
 .post .post-title{
 	position:relative;
-	color:#388E3C;
+	color:#234C50;
 	text-align: center;
 	font-size:3em;
 	line-height:1.375em;
@@ -1110,7 +1110,7 @@ body{
 .post .post-shared{
 	border:1;
 	position:left;
-	color:#388E3C;
+	color:#234C50;
 	text-align: center;
 	font-size:1.3em;
 	font-weight:500;
@@ -1450,7 +1450,7 @@ body{
 }
 .post-footer .post-tags a:hover,
 .post-footer .post-tags a:focus{
-	background:#689F38
+	background:#2F666B
 }
 .post-footer .post-share{
 	float:center
