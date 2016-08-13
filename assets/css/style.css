@@ -147,13 +147,13 @@ body{
 ::-moz-selection,
 ::-moz-selection{
 	color:#222;
-	background:#D6EDFF;
+	background:#2F666B;
 	text-shadow:none
 }
 ::-moz-selection,
 ::selection{
 	color:#222;
-	background:#D6EDFF;
+	background:#2F666B;
 	text-shadow:none
 }
 a{
@@ -170,7 +170,7 @@ a:hover,a:focus{
 }
 .post-content a:hover,
 .post-content a:focus{
-	border-color:#2DB77E
+	border-color:#2F666B
 }
 h1,h2,h3,h4,h5,h6{
 	text-rendering:optimizeLegibility;
@@ -810,7 +810,7 @@ body{
 }
 #menu .menu-list .menu-list-item a:hover,
 #menu .menu-list .menu-list-item a:focus{
-	background:#c5ee95
+	background:#A2BBBD
 }
 #menu .menu-list .menu-list-item a.current{
 	font-weight:700;
