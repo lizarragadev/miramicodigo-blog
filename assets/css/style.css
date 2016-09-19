@@ -174,7 +174,7 @@ a:hover,a:focus{
 }
 h1,h2,h3,h4,h5,h6{
 	text-rendering:optimizeLegibility;
-	color:#1F2026
+	color:#2A2A2D
 }
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
 	font-weight:inherit
@@ -216,7 +216,7 @@ ul>li:before,ol>li:before{
 	font-weight:400;
 	line-height:1.5em;
 	text-align:right;
-	color:#1F2026
+	color:#2A2A2D
 }
 ul>li:before{
 	margin-top:0.125em;
@@ -246,7 +246,7 @@ dl dt{
 	line-height:1.143em;
 	font-weight:700;
 	margin-bottom:0.571em;
-	color:#1F2026
+	color:#2A2A2D
 }
 dl dd{
 	margin-left:1em;
@@ -292,7 +292,7 @@ small{
 	font-size:0.9em
 }
 mark{
-	background-color:#FFC336
+	background-color:#B2EBF2
 }
 code,tt{
 	display:inline-block;
@@ -403,7 +403,7 @@ table th{
 	font-size:0.75em;
 	line-height:1.334em;
 	padding:1.334em;
-	color:#1F2026
+	color:#2A2A2D
 }
 img{
 	display:block;
@@ -841,7 +841,7 @@ body{
 	top:0;
 	width:100%;
 	height:100%;
-	background:#1F2026;
+	background:#2A2A2D;
 	opacity:0;
 	transition:all ease-out 0.3s;
 	-webkit-transform-style:preserve-3d;
@@ -1271,7 +1271,7 @@ body{
 	animation-delay:1.2s
 }
 .post-list .post.post.featured .inner{
-	background:#1F2026;
+	background:#2A2A2D;
 	color:#9D9FA6
 }
 .post-list .post.post.featured .inner:after{
@@ -1281,7 +1281,7 @@ body{
 	top:0;
 	width:0;
 	height:0;
-	border-right:3em solid #FFC336;
+	border-right:3em solid #B2EBF2;
 	border-bottom:3em solid transparent;
 	z-index:1
 }
@@ -1295,7 +1295,7 @@ body{
 	height:1.75em;
 	line-height:2em;
 	text-align:center;
-	color:#1F2026;
+	color:#2A2A2D;
 	z-index:2
 }
 .post-list .post.post.featured .post-image:after{
@@ -1418,7 +1418,7 @@ body{
 }
 .post-list .post .post-more a:hover,
 .post-list .post .post-more a:focus{
-	color:#1F2026
+	color:#2A2A2D
 }
 .post-list .post .post-more a i{
 	color:#00BCD4
@@ -1686,7 +1686,7 @@ body{
 }
 .pagination .pagination-item:hover,
 .pagination .pagination-item:focus{
-	color:#1F2026;
+	color:#2A2A2D;
 	box-shadow:0 0 0 2px #00BCD4
 }
 .pagination .pagination-item i{
