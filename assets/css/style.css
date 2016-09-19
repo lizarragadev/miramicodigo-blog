@@ -292,7 +292,7 @@ small{
 	font-size:0.9em
 }
 mark{
-	background-color:#B2EBF2
+	background-color:#C9F3F9
 }
 code,tt{
 	display:inline-block;
@@ -1281,7 +1281,7 @@ body{
 	top:0;
 	width:0;
 	height:0;
-	border-right:3em solid #B2EBF2;
+	border-right:3em solid #C9F3F9;
 	border-bottom:3em solid transparent;
 	z-index:1
 }
